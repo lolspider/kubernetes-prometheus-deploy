@@ -179,10 +179,6 @@ data:
           action: replace
           target_label: kubernetes_pod_name
 
-      - job_name: kube-controller
-        static_configs:
-          - targets:
-            - 192.168.33.101:10252
 kind: ConfigMap
 metadata:
   creationTimestamp: null

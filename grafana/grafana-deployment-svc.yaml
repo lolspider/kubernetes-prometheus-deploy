@@ -16,7 +16,7 @@ spec:
         app: grafana
     spec:
       containers:
-      - image: grafana/grafana:5.0.4
+      - image: grafana/grafana
         name: grafana
         imagePullPolicy: IfNotPresent
         # env:

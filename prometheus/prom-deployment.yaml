@@ -21,6 +21,7 @@ spec:
       containers:
       - name: prometheus
         image: lolspider/prometheus:v2.2.1
+        imagePullPolicy: IfNotPresent
         args:
           - '--storage.tsdb.retention=24h'
           - '--config.file=/etc/prometheus/prometheus.yml'
